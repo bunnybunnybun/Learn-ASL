@@ -9,18 +9,22 @@ class MainWindow(Gtk.Window):
         super().__init__(title="Grid Example")
         self.set_default_size(500,400)
 
+        #------------------------------------------------------------
+
         main_box = Gtk.Box()
         main_box.set_border_width(10)
         self.notebook = Gtk.Notebook()
         self.notebook.set_tab_pos(Gtk.PositionType.TOP)
 
+        #------------------------------------------------------------
+
         page1 = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         page1.set_border_width(10)
         
+        #------------------------------------------------------------
 
         numbers_page = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         numbers_page.set_border_width(10)
-
 
         letters_page = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         letters_page.set_border_width(10)
@@ -33,10 +37,13 @@ class MainWindow(Gtk.Window):
 
         page1.add(nested_notebook)
 
+        #------------------------------------------------------------
+
 
         page2 = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         page2.set_border_width(10)
 
+        #------------------------------------------------------------
 
         self.notebook.append_page(page1, Gtk.Label(label="Lessons"))
         self.notebook.append_page(page2, Gtk.Label(label="Overview"))
