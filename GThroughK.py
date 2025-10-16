@@ -1,0 +1,240 @@
+import gi
+
+gi.require_version("Gtk", "3.0")
+from gi.repository import Gtk
+
+########################################################################
+
+class G_Through_K_Window_G(Gtk.Window):
+    def __init__(self):
+        super().__init__(title="G Through K")
+        self.set_default_size(300, 300)
+
+        box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
+        box_main.set_border_width(10)
+        box_buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing= 6)
+        box_buttons.set_border_width(10)
+
+        image = Gtk.Image()
+        image.set_from_file("assets/G.png")
+        label = Gtk.Label(label="")
+        label.set_line_wrap(True)
+        label.set_line_wrap_mode(Gtk.WrapMode.WORD)
+        button_prev = Gtk.Button(label = "Previous")
+        button_prev.set_size_request(80, 40)
+        button_close = Gtk.Button(label = "Close")
+        button_close.connect("clicked", self.on_close_clicked)
+        button_close.set_size_request(80, 40)
+        button_next = Gtk.Button(label = "Next")
+        button_next.connect("clicked", self.on_next_clicked)
+        button_next.set_size_request(80, 40)
+
+        box_main.pack_start(image, True, True, 0)
+        box_main.pack_start(label, True, True, 0)
+        box_main.pack_start(box_buttons, False, False, 0)
+        box_buttons.pack_start(button_prev, True, True, 0)
+        box_buttons.pack_start(button_close, True, True, 0)
+        box_buttons.pack_start(button_next, True, True, 0)
+        self.add(box_main)
+
+    def on_next_clicked(self, widget):
+        self.destroy()
+        g_through_k_window_h = G_Through_K_Window_H()
+        g_through_k_window_h.show_all()
+
+
+    def on_close_clicked(self, widget):
+        self.destroy()
+
+###############################################################################
+
+class G_Through_K_Window_H(Gtk.Window):
+    def __init__(self):
+        super().__init__(title="G Through K")
+        self.set_default_size(300, 300)
+
+        box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
+        box_main.set_border_width(10)
+        box_buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing= 6)
+        box_buttons.set_border_width(10)
+
+        image = Gtk.Image()
+        image.set_from_file("assets/H.png")
+        label = Gtk.Label(label="")
+        label.set_line_wrap(True)
+        label.set_line_wrap_mode(Gtk.WrapMode.WORD)
+        button_prev = Gtk.Button(label = "Previous")
+        button_prev.connect("clicked", self.on_prev_clicked)
+        button_prev.set_size_request(80, 40)
+        button_close = Gtk.Button(label = "Close")
+        button_close.connect("clicked", self.on_close_clicked)
+        button_close.set_size_request(80, 40)
+        button_next = Gtk.Button(label = "Next")
+        button_next.connect("clicked", self.on_next_clicked)
+        button_next.set_size_request(80, 40)
+
+        box_main.pack_start(image, True, True, 0)
+        box_main.pack_start(label, True, True, 0)
+        box_main.pack_start(box_buttons, False, False, 0)
+        box_buttons.pack_start(button_prev, True, True, 0)
+        box_buttons.pack_start(button_close, True, True, 0)
+        box_buttons.pack_start(button_next, True, True, 0)
+        self.add(box_main)
+
+    def on_prev_clicked(self, widget):
+        self.destroy()
+        g_through_k_window_g = G_Through_K_Window_G()
+        g_through_k_window_g.show_all()
+
+    def on_close_clicked(self, widget):
+        self.destroy()
+        a_through_f_window_c = A_Through_F_Window_C()
+
+    def on_next_clicked(self, widget):
+        self.destroy()
+        g_through_k_window_i = G_Through_K_Window_I()
+        g_through_k_window_i.show_all()
+
+###########################################################################
+
+class G_Through_K_Window_I(Gtk.Window):
+    def __init__(self):
+        super().__init__(title="G Through K")
+        self.set_default_size(300, 300)
+
+        box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
+        box_main.set_border_width(10)
+        box_buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing= 6)
+        box_buttons.set_border_width(10)
+
+        image = Gtk.Image()
+        image.set_from_file("assets/I.png")
+        label = Gtk.Label(label="")
+        label.set_line_wrap(True)
+        label.set_line_wrap_mode(Gtk.WrapMode.WORD)
+        button_prev = Gtk.Button(label = "Previous")
+        button_prev.connect("clicked", self.on_prev_clicked)
+        button_prev.set_size_request(80, 40)
+        button_close = Gtk.Button(label = "Close")
+        button_close.connect("clicked", self.on_close_clicked)
+        button_close.set_size_request(80, 40)
+        button_next = Gtk.Button(label = "Next")
+        button_next.connect("clicked", self.on_next_clicked)
+        button_next.set_size_request(80, 40)
+
+        box_main.pack_start(image, True, True, 0)
+        box_main.pack_start(label, True, True, 0)
+        box_main.pack_start(box_buttons, False, False, 0)
+        box_buttons.pack_start(button_prev, True, True, 0)
+        box_buttons.pack_start(button_close, True, True, 0)
+        box_buttons.pack_start(button_next, True, True, 0)
+        self.add(box_main)
+
+    def on_prev_clicked(self, widget):
+        self.destroy()
+        g_through_k_window_h = G_Through_K_Window_H()
+        g_through_k_window_h.show_all()
+
+    def on_close_clicked(self, widget):
+        self.destroy()
+
+    def on_next_clicked(self, widget):
+        self.destroy()
+        g_through_k_window_j = G_Through_K_Window_J()
+        g_through_k_window_j.show_all()
+
+#####################################################################
+
+class G_Through_K_Window_J(Gtk.Window):
+    def __init__(self):
+        super().__init__(title="G Through K")
+        self.set_default_size(300, 300)
+
+        box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
+        box_main.set_border_width(10)
+        box_buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing= 6)
+        box_buttons.set_border_width(10)
+
+        image = Gtk.Image()
+        image.set_from_file("assets/J.png")
+        label = Gtk.Label(label="")
+        label.set_line_wrap(True)
+        label.set_line_wrap_mode(Gtk.WrapMode.WORD)
+        button_prev = Gtk.Button(label = "Previous")
+        button_prev.connect("clicked", self.on_prev_clicked)
+        button_prev.set_size_request(80, 40)
+        button_close = Gtk.Button(label = "Close")
+        button_close.connect("clicked", self.on_close_clicked)
+        button_close.set_size_request(80, 40)
+        button_next = Gtk.Button(label = "Next")
+        button_next.connect("clicked", self.on_next_clicked)
+        button_next.set_size_request(80, 40)
+
+        box_main.pack_start(image, True, True, 0)
+        box_main.pack_start(label, True, True, 0)
+        box_main.pack_start(box_buttons, False, False, 0)
+        box_buttons.pack_start(button_prev, True, True, 0)
+        box_buttons.pack_start(button_close, True, True, 0)
+        box_buttons.pack_start(button_next, True, True, 0)
+        self.add(box_main)
+
+    def on_prev_clicked(self, widget):
+        self.destroy()
+        g_through_k_window_i = G_Through_K_Window_I()
+        g_through_k_window_i.show_all()
+
+    def on_close_clicked(self, widget):
+        self.destroy()
+
+    def on_next_clicked(self, widget):
+        self.destroy()
+        g_through_k_window_k = G_Through_K_Window_K()
+        g_through_k_window_k.show_all()
+
+###########################################################################
+
+class G_Through_K_Window_K(Gtk.Window):
+    def __init__(self):
+        super().__init__(title="G Through K")
+        self.set_default_size(300, 300)
+
+        box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
+        box_main.set_border_width(10)
+        box_buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing= 6)
+        box_buttons.set_border_width(10)
+
+        image = Gtk.Image()
+        image.set_from_file("assets/K.png")
+        label = Gtk.Label(label="")
+        label.set_line_wrap(True)
+        label.set_line_wrap_mode(Gtk.WrapMode.WORD)
+        button_prev = Gtk.Button(label = "Previous")
+        button_prev.connect("clicked", self.on_prev_clicked)
+        button_prev.set_size_request(80, 40)
+        button_close = Gtk.Button(label = "Close")
+        button_close.connect("clicked", self.on_close_clicked)
+        button_close.set_size_request(80, 40)
+        button_next = Gtk.Button(label = "Next")
+        button_next.connect("clicked", self.on_next_clicked)
+        button_next.set_size_request(80, 40)
+
+        box_main.pack_start(image, True, True, 0)
+        box_main.pack_start(label, True, True, 0)
+        box_main.pack_start(box_buttons, False, False, 0)
+        box_buttons.pack_start(button_prev, True, True, 0)
+        box_buttons.pack_start(button_close, True, True, 0)
+        box_buttons.pack_start(button_next, True, True, 0)
+        self.add(box_main)
+
+    def on_prev_clicked(self, widget):
+        self.destroy()
+        g_through_k_window_j = G_Through_K_Window_J()
+        g_through_k_window_j.show_all()
+
+    def on_close_clicked(self, widget):
+        self.destroy()
+
+    def on_next_clicked(self, widget):
+        self.destroy()
+        g_through_k_window_g = G_Through_K_Window_G()
+        g_through_k_window_g.show_all()
