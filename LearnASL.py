@@ -31,6 +31,8 @@ class MainWindow(Gtk.Window):
         letters_page.set_border_width(10)
         #------------------------------------------------------------
 
+        intro_to_letters = Gtk.Button(label="Intro to Letters")
+        intro_to_letters.set_border_width(8)
         letter_button1 = Gtk.Button(label="A Through F")
         letter_button1.connect("clicked", self.open_a_through_f)
         letter_button1.set_border_width(8)
@@ -44,11 +46,12 @@ class MainWindow(Gtk.Window):
         letter_button5.set_border_width(8)
 
         letter_grid = Gtk.Grid()
-        letter_grid.add(letter_button1)
-        letter_grid.attach(letter_button2, 1, 0, 2, 1)
-        letter_grid.attach_next_to(letter_button3, letter_button2, Gtk.PositionType.RIGHT, 1, 1)
-        letter_grid.attach_next_to(letter_button4, letter_button1, Gtk.PositionType.BOTTOM, 1, 2)
-        letter_grid.attach_next_to(letter_button5, letter_button2, Gtk.PositionType.BOTTOM, 1, 2)
+        letter_grid.attach(intro_to_letters, 1, 0, 1, 1)
+        letter_grid.attach_next_to(letter_button1, intro_to_letters, Gtk.PositionType.RIGHT, 1, 1)
+        letter_grid.attach_next_to(letter_button2, letter_button1, Gtk.PositionType.RIGHT, 1, 1)
+        letter_grid.attach_next_to(letter_button3, intro_to_letters, Gtk.PositionType.BOTTOM, 1, 1)
+        letter_grid.attach_next_to(letter_button4, letter_button3, Gtk.PositionType.RIGHT, 1, 1)
+        letter_grid.attach_next_to(letter_button5, letter_button4, Gtk.PositionType.RIGHT, 1, 1)
         letters_page.add(letter_grid)
 
         #------------------------------------------------------------
