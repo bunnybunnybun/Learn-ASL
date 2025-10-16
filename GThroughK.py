@@ -109,7 +109,7 @@ class G_Through_K_Window_I(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/I.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Point your pinky finger straight up, and fold your index, middle and ring fingers down. Fold your thumb in over your index and middle fingers")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
