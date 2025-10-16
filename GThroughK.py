@@ -17,7 +17,7 @@ class G_Through_K_Window_G(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/G.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Literaly just like you are pointing. You can also think of it as a finger gun but only with your index finger.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
