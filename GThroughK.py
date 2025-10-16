@@ -109,7 +109,7 @@ class G_Through_K_Window_I(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/I.png")
-        label = Gtk.Label(label="Point your pinky finger straight up, and fold your index, middle and ring fingers down. Fold your thumb in over your index and middle fingers")
+        label = Gtk.Label(label="Point your pinky finger straight up, and fold your index, middle and ring fingers down. Fold your thumb in over your index and middle fingers.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
@@ -157,7 +157,7 @@ class G_Through_K_Window_J(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/J.png")
-        label = Gtk.Label(label="Just like an I, but swing your hand down and to the right (from your perspective), so that from the perspective of the person you are signaling to, it looks like the motion you made is in the shape of a J")
+        label = Gtk.Label(label="Just like an I, but swing your hand down and to the right (from your perspective), so that from the perspective of the person you are signaling to, it looks like the motion you made is in the shape of a J.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
@@ -205,7 +205,7 @@ class G_Through_K_Window_K(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/K.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Point your index and middle fingers straight up, sperated from each other. Fold your ring and pinky fingers down over your palm, and hold your thumb in front of the bottom of your index and middle fingers.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
