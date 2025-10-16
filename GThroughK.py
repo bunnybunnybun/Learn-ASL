@@ -88,7 +88,6 @@ class G_Through_K_Window_H(Gtk.Window):
 
     def on_close_clicked(self, widget):
         self.destroy()
-        a_through_f_window_c = A_Through_F_Window_C()
 
     def on_next_clicked(self, widget):
         self.destroy()
