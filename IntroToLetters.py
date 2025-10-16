@@ -16,7 +16,7 @@ class Intro_To_Letters_Window_1(Gtk.Window):
         box_buttons.set_border_width(10)
 
         
-        label = Gtk.Label(label="Generally, you want your palm facing out when you are fingerspelling letters. Keep this in mind while practicing. Use your main hand to signal letters, and keep it a little to the side, instead of directly in front of you.")
+        label = Gtk.Label(label="Generally, you want your palm facing out, towards whoever you are signaling to, when you are fingerspelling letters. Keep this in mind while practicing. Use your main hand to signal letters, and keep it a little to the side, instead of directly in front of you.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
@@ -84,9 +84,6 @@ class Intro_To_Letters_Window_2(Gtk.Window):
 
     def on_next_clicked(self, widget):
         self.destroy()
-        a_through_f_window_b = A_Through_F_Window_B()
-        a_through_f_window_b.show_all()
-
 
     def on_close_clicked(self, widget):
         self.destroy()
