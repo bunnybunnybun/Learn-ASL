@@ -1,4 +1,5 @@
 import gi
+import LettersWindows
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
@@ -6,7 +7,7 @@ from gi.repository import Gtk
 
 class MainWindow(Gtk.Window):
     def __init__(self):
-        super().__init__(title="Grid Example")
+        super().__init__(title="LearnASL")
         self.set_default_size(500,400)
 
         #------------------------------------------------------------
@@ -28,10 +29,10 @@ class MainWindow(Gtk.Window):
 
         letters_page = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         letters_page.set_border_width(10)
-
         #------------------------------------------------------------
 
         letter_button1 = Gtk.Button(label="A Through F")
+        letter_button1.connect("clicked", self.open_a_through_f)
         letter_button1.set_border_width(8)
         letter_button2 = Gtk.Button(label="G Through K")
         letter_button2.set_border_width(8)
@@ -114,8 +115,10 @@ class MainWindow(Gtk.Window):
 
         self.add(main_box)
 
+    def open_a_through_f(self, widget):
+        a_through_f_window = LettersWindows.A_Through_F_Window()
+        a_through_f_window.show_all()
     
-
 
 win = MainWindow()
 win.connect("destroy", Gtk.main_quit)
