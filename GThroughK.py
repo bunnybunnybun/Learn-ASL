@@ -60,7 +60,7 @@ class G_Through_K_Window_H(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/H.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Just like G, but with both your index and middle fingers.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
