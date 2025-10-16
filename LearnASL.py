@@ -1,5 +1,5 @@
 import gi
-import LettersWindows
+import AThroughF
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
@@ -116,7 +116,7 @@ class MainWindow(Gtk.Window):
         self.add(main_box)
 
     def open_a_through_f(self, widget):
-        a_through_f_window = LettersWindows.A_Through_F_Window()
+        a_through_f_window = AThroughF.A_Through_F_Window_A()
         a_through_f_window.show_all()
     
 
