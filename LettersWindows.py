@@ -18,6 +18,7 @@ class A_Through_F_Window(Gtk.Window):
         button_prev = Gtk.Button(label = "Previous")
         button_prev.set_size_request(80, 40)
         button_close = Gtk.Button(label = "Close")
+        button_close.connect("clicked", self.on_close_clicked)
         button_close.set_size_request(80, 40)
         button_next = Gtk.Button(label = "Next")
         button_next.set_size_request(80, 40)
@@ -28,3 +29,6 @@ class A_Through_F_Window(Gtk.Window):
         box_buttons.pack_start(button_close, True, True, 0)
         box_buttons.pack_start(button_next, True, True, 0)
         self.add(box_main)
+
+    def on_close_clicked(self, widget):
+        self.destroy()
