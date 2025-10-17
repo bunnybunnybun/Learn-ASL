@@ -50,7 +50,7 @@ class L_Through_P_Window_L(Gtk.Window):
 
 class L_Through_P_Window_M(Gtk.Window):
     def __init__(self):
-        super().__init__(title="G Through K")
+        super().__init__(title="L Through P")
         self.set_default_size(300, 300)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
@@ -83,7 +83,7 @@ class L_Through_P_Window_M(Gtk.Window):
 
     def on_prev_clicked(self, widget):
         self.destroy()
-        l_through_p_window_l = L_Through_P_Window_l()
+        l_through_p_window_l = L_Through_P_Window_L()
         l_through_p_window_l.show_all()
 
     def on_close_clicked(self, widget):
@@ -98,7 +98,7 @@ class L_Through_P_Window_M(Gtk.Window):
 
 class L_Through_P_Window_N(Gtk.Window):
     def __init__(self):
-        super().__init__(title="G Through K")
+        super().__init__(title="L Through P")
         self.set_default_size(300, 300)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
@@ -146,7 +146,7 @@ class L_Through_P_Window_N(Gtk.Window):
 
 class L_Through_P_Window_O(Gtk.Window):
     def __init__(self):
-        super().__init__(title="G Through K")
+        super().__init__(title="L Through P")
         self.set_default_size(300, 300)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
@@ -194,7 +194,7 @@ class L_Through_P_Window_O(Gtk.Window):
 
 class L_Through_P_Window_P(Gtk.Window):
     def __init__(self):
-        super().__init__(title="G Through K")
+        super().__init__(title="L Through P")
         self.set_default_size(300, 300)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
