@@ -213,7 +213,7 @@ class L_Through_P_Window_P(Gtk.Window):
         button_close = Gtk.Button(label = "Close")
         button_close.connect("clicked", self.on_close_clicked)
         button_close.set_size_request(80, 40)
-        button_next = Gtk.Button(label = "Next")
+        button_next = Gtk.Button(label = "Repeat")
         button_next.connect("clicked", self.on_next_clicked)
         button_next.set_size_request(80, 40)
 
