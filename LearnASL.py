@@ -2,6 +2,7 @@ import gi
 import IntroToLetters
 import AThroughF
 import GThroughK
+import LThroughP
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
@@ -43,6 +44,7 @@ class MainWindow(Gtk.Window):
         letter_button2.connect("clicked", self.open_g_through_k)
         letter_button2.set_border_width(8)
         letter_button3 = Gtk.Button(label="L Through P")
+        letter_button3.connect("clicked", self.open_l_through_p)
         letter_button3.set_border_width(8)
         letter_button4 = Gtk.Button(label="Q Through U")
         letter_button4.set_border_width(8)
@@ -136,9 +138,10 @@ class MainWindow(Gtk.Window):
         g_through_k_window = GThroughK.G_Through_K_Window_G()
         g_through_k_window.show_all()
 
+    def open_l_through_p(self, widget):
+        l_through_p_window = LThroughP.L_Through_P_Window_L()
+        l_through_p_window.show_all()
     
-    
-
 win = MainWindow()
 win.connect("destroy", Gtk.main_quit)
 win.show_all()
