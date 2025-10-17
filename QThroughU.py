@@ -17,7 +17,7 @@ class Q_Through_U_Window_Q(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/Q.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Curl your middle, ring, and pinky fingers in as if you are making a fist. Then, point your thumb and index fingers straight down.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
@@ -60,7 +60,7 @@ class Q_Through_U_Window_R(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/R.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Point your middle finger up, with your index finger crossed in front of it. Fold your ring and pinky fingers down, and put your thumb in front of your ring finger.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
@@ -108,7 +108,7 @@ class Q_Through_U_Window_S(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/S.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Create a fist, then fold your thumb in front of your index and middle fingers.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
@@ -156,7 +156,7 @@ class Q_Through_U_Window_T(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/T.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Create a fist, then stick your thumb right in between your index and middle fingers, with your index finger folding over the lower part of your thumb.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
@@ -204,7 +204,7 @@ class Q_Through_U_Window_U(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/U.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Point your index and middle fingers straight up. Fold down your ring and pinky fingers, and fold your thumb over your ring finger.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
