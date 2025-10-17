@@ -83,8 +83,8 @@ class L_Through_P_Window_M(Gtk.Window):
 
     def on_prev_clicked(self, widget):
         self.destroy()
-        l_through_p_window_p = L_Through_P_Window_P()
-        l_through_p_window_p.show_all()
+        l_through_p_window_l = L_Through_P_Window_l()
+        l_through_p_window_l.show_all()
 
     def on_close_clicked(self, widget):
         self.destroy()
