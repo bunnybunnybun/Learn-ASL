@@ -17,7 +17,7 @@ class V_Through_Z_Window_V(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/V.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Point your index and middle fingers straight up, seperated from each other. Fold down your ring and pinky fingers, and fold your thumb in front of your ring finger. It's just like the symbol for U, but you keep your index and pinky fingers seperated, so they're in the shape of a V.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
@@ -60,7 +60,7 @@ class V_Through_Z_Window_W(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/W.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Point your index, middle, and ring finers straight up, seperated so they aren't touching each other. Fold your pinky finger down, and fold your thumb in so it's touching the backside of your pinky.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
@@ -108,7 +108,7 @@ class V_Through_Z_Window_X(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/X.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Fold your thumb in, to the middle of your palm, then fold your middle, ring, and pinky fingers over your thumb. Point your index finger up and curl it into a hook shape.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
@@ -156,7 +156,7 @@ class V_Through_Z_Window_Y(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/Y.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Fold your index, middle, and ring fingers down over your palm. Point your pinky up, and your thumb off to the side.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
@@ -204,7 +204,7 @@ class V_Through_Z_Window_Z(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/Z.png")
-        label = Gtk.Label(label="")
+        label = Gtk.Label(label="Curl your middle, ring, and pinky fingers into your palm, and fold your thumb in front of your middle and ring fingers. Point your index finger straight up. Move your whole hand in such a way that, from the perspective of the person you are signaling to, your index finger draws the shape of a Z in the air.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")

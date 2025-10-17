@@ -204,7 +204,7 @@ class Q_Through_U_Window_U(Gtk.Window):
 
         image = Gtk.Image()
         image.set_from_file("assets/U.png")
-        label = Gtk.Label(label="Point your index and middle fingers straight up. Fold down your ring and pinky fingers, and fold your thumb over your ring finger.")
+        label = Gtk.Label(label="Point your index and middle fingers straight up, touching each other. Fold down your ring and pinky fingers, and fold your thumb over your ring finger.")
         label.set_line_wrap(True)
         label.set_line_wrap_mode(Gtk.WrapMode.WORD)
         button_prev = Gtk.Button(label = "Previous")
