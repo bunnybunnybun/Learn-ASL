@@ -11,9 +11,9 @@ class L_Through_P_Window_L(Gtk.Window):
         self.set_default_size(300, 300)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
-        box_main.set_border_width(10)
+        box_main.set_border_width(20)
         box_buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing= 6)
-        box_buttons.set_border_width(10)
+        box_buttons.set_border_width(0)
 
         image = Gtk.Image()
         image.set_from_file("assets/L.png")
@@ -57,9 +57,9 @@ class L_Through_P_Window_M(Gtk.Window):
         self.set_default_size(300, 300)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
-        box_main.set_border_width(10)
+        box_main.set_border_width(20)
         box_buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing= 6)
-        box_buttons.set_border_width(10)
+        box_buttons.set_border_width(0)
 
         image = Gtk.Image()
         image.set_from_file("assets/M.png")
@@ -108,9 +108,9 @@ class L_Through_P_Window_N(Gtk.Window):
         self.set_default_size(300, 300)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
-        box_main.set_border_width(10)
+        box_main.set_border_width(20)
         box_buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing= 6)
-        box_buttons.set_border_width(10)
+        box_buttons.set_border_width(0)
 
         image = Gtk.Image()
         image.set_from_file("assets/N.png")
@@ -159,9 +159,9 @@ class L_Through_P_Window_O(Gtk.Window):
         self.set_default_size(300, 300)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
-        box_main.set_border_width(10)
+        box_main.set_border_width(20)
         box_buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing= 6)
-        box_buttons.set_border_width(10)
+        box_buttons.set_border_width(0)
 
         image = Gtk.Image()
         image.set_from_file("assets/O.png")
@@ -210,9 +210,9 @@ class L_Through_P_Window_P(Gtk.Window):
         self.set_default_size(300, 300)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
-        box_main.set_border_width(10)
+        box_main.set_border_width(20)
         box_buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing= 6)
-        box_buttons.set_border_width(10)
+        box_buttons.set_border_width(0)
 
         image = Gtk.Image()
         image.set_from_file("assets/P.png")

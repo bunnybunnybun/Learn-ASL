@@ -11,9 +11,9 @@ class Intro_To_Letters_Window_1(Gtk.Window):
         self.set_default_size(300, 300)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
-        box_main.set_border_width(10)
+        box_main.set_border_width(20)
         box_buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing= 6)
-        box_buttons.set_border_width(10)
+        box_buttons.set_border_width(0)
 
         
         label = Gtk.Label(label="Generally, you want your palm facing out, towards whoever you are signaling to, when you are fingerspelling letters. Keep this in mind while practicing. Use your main hand to signal letters, and keep it a little to the side, instead of directly in front of you.")
@@ -55,9 +55,9 @@ class Intro_To_Letters_Window_2(Gtk.Window):
         self.set_default_size(300, 300)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
-        box_main.set_border_width(10)
+        box_main.set_border_width(20)
         box_buttons = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing= 6)
-        box_buttons.set_border_width(10)
+        box_buttons.set_border_width(0)
 
         
         label = Gtk.Label(label="Now, click on the A Through F button to begin learning how to sign the letters A through F. It will show you how to do the letters one at a time, with a photo and short bit of text describing how to make the right shape with your hand. Practice the shape, then go to the next letter. Once you reach the end, repeat it a few times. Then go to the next section. Remember that you can always come back if you forget something.")

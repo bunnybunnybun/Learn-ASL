@@ -14,12 +14,16 @@ css_provider = Gtk.CssProvider()
 css = '''
 button.Button_Type_1 {
     border-radius: 12px;
-    min-width: 150px;
+    min-width: 110px;
     min-height: 25px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+    margin: 2px;
 }
 
 button.Button_Type_2 {
     border-radius: 12px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px;
 }
 '''
 
