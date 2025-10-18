@@ -17,6 +17,10 @@ button.Button_Type_1 {
     min-width: 150px;
     min-height: 25px;
 }
+
+button.Button_Type_2 {
+    border-radius: 12px;
+}
 '''
 
 css_provider.load_from_data(css.encode())
@@ -93,26 +97,37 @@ class MainWindow(Gtk.Window):
         #------------------------------------------------------------
 
         number_intro_button = Gtk.Button(label="Intro to numbers")
+        number_intro_button.get_style_context().add_class("Button_Type_1")
         number_intro_button.set_border_width(8)
         number_button1 = Gtk.Button(label="0 Through 9")
+        number_button1.get_style_context().add_class("Button_Type_1")
         number_button1.set_border_width(8)
         number_button2 = Gtk.Button(label="10 Through 19")
+        number_button2.get_style_context().add_class("Button_Type_1")
         number_button2.set_border_width(8)
         number_button3 = Gtk.Button(label="20 Through 29")
+        number_button3.get_style_context().add_class("Button_Type_1")
         number_button3.set_border_width(8)
         number_button4 = Gtk.Button(label="30 Through 39")
+        number_button4.get_style_context().add_class("Button_Type_1")
         number_button4.set_border_width(8)
         number_button5 = Gtk.Button(label="40 Through 49")
+        number_button5.get_style_context().add_class("Button_Type_1")
         number_button5.set_border_width(8)
         number_button6 = Gtk.Button(label="50 Through 59")
+        number_button6.get_style_context().add_class("Button_Type_1")
         number_button6.set_border_width(8)
         number_button7 = Gtk.Button(label="60 Through 69")
+        number_button7.get_style_context().add_class("Button_Type_1")
         number_button7.set_border_width(8)
         number_button8 = Gtk.Button(label="70 Through 79")
+        number_button8.get_style_context().add_class("Button_Type_1")
         number_button8.set_border_width(8)
         number_button9 = Gtk.Button(label="80 Through 89")
+        number_button9.get_style_context().add_class("Button_Type_1")
         number_button9.set_border_width(8)
         number_button10 = Gtk.Button(label="90 Through 100")
+        number_button10.get_style_context().add_class("Button_Type_1")
         number_button10.set_border_width(8)
 
         number_grid = Gtk.Grid()
