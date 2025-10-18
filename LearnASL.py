@@ -7,7 +7,27 @@ import QThroughU
 import VThroughZ
 
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk
+from gi.repository import Gtk, Gdk
+
+css_provider = Gtk.CssProvider()
+
+css = '''
+button.Button_Type_1 {
+    border-radius: 12px;
+    min-width: 150px;
+    min-height: 25px;
+}
+'''
+
+css_provider.load_from_data(css.encode())
+
+screen = Gdk.Screen.get_default()
+style_context = Gtk.StyleContext()
+style_context.add_provider_for_screen(
+    screen,
+    css_provider,
+    Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+)
 
 
 class MainWindow(Gtk.Window):
@@ -18,7 +38,7 @@ class MainWindow(Gtk.Window):
         #------------------------------------------------------------
 
         main_box = Gtk.Box()
-        main_box.set_border_width(10)
+        main_box.set_border_width(0)
         self.notebook = Gtk.Notebook()
         self.notebook.set_tab_pos(Gtk.PositionType.TOP)
 
@@ -38,21 +58,27 @@ class MainWindow(Gtk.Window):
 
         intro_to_letters = Gtk.Button(label="Intro to Letters")
         intro_to_letters.connect("clicked", self.open_intro_to_letters)
+        intro_to_letters.get_style_context().add_class("Button_Type_1")
         intro_to_letters.set_border_width(8)
         letter_button1 = Gtk.Button(label="A Through F")
         letter_button1.connect("clicked", self.open_a_through_f)
+        letter_button1.get_style_context().add_class("Button_Type_1")
         letter_button1.set_border_width(8)
         letter_button2 = Gtk.Button(label="G Through K")
         letter_button2.connect("clicked", self.open_g_through_k)
+        letter_button2.get_style_context().add_class("Button_Type_1")
         letter_button2.set_border_width(8)
         letter_button3 = Gtk.Button(label="L Through P")
         letter_button3.connect("clicked", self.open_l_through_p)
+        letter_button3.get_style_context().add_class("Button_Type_1")
         letter_button3.set_border_width(8)
         letter_button4 = Gtk.Button(label="Q Through U")
         letter_button4.connect("clicked", self.open_q_through_u)
+        letter_button4.get_style_context().add_class("Button_Type_1")
         letter_button4.set_border_width(8)
         letter_button5 = Gtk.Button(label="V Through Z")
         letter_button5.connect("clicked", self.open_v_through_z)
+        letter_button5.get_style_context().add_class("Button_Type_1")
         letter_button5.set_border_width(8)
 
         letter_grid = Gtk.Grid()
