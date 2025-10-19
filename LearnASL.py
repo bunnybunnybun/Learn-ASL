@@ -44,6 +44,19 @@ button.Button_Type_2:hover {
     min-width: 90px;
 }
 
+button.close {
+    color: red;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50px;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+box.nested_box {
+    border: 3px solid rgba(37, 37, 37, 1);
+}
+
 box.switcher {
     background: linear-gradient(180deg, rgba(10,119,127,1) 85%, rgba(6,74,79,1) 100%);
 }
@@ -67,7 +80,8 @@ style_context.add_provider_for_screen(
 class MainWindow(Gtk.Window):
     def __init__(self):
         super().__init__(title="LearnASL")
-        self.set_default_size(500,400)
+        self.set_default_size(588,437)
+        self.set_decorated(False)
 
         #------------------------------------------------------------
 
@@ -87,10 +101,10 @@ class MainWindow(Gtk.Window):
         #____________________________________________________________
 
         numbers_page = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
-        numbers_page.set_border_width(10)
+        numbers_page.set_border_width(2)
 
         letters_page = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
-        letters_page.set_border_width(10)
+        letters_page.set_border_width(2)
         #------------------------------------------------------------
 
         intro_to_letters = Gtk.Button(label="Intro to Letters")
@@ -190,7 +204,8 @@ class MainWindow(Gtk.Window):
         #____________________________________________________________
 
         nested_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
-        nested_box.set_border_width(15)
+        nested_box.set_border_width(10)
+        nested_box.get_style_context().add_class("nested_box")
         page1.add(nested_box)
 
         
@@ -202,23 +217,30 @@ class MainWindow(Gtk.Window):
 
         nested_switcher = Gtk.StackSwitcher()
         nested_switcher.set_stack(nested_stack)
+        nested_switcher.set_border_width(10)
 
         nested_box.add(nested_switcher)
         nested_box.add(nested_stack)
 
         #--------------------------------------------------------------
 
-        stack = Gtk.Stack()
-        stack.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT_RIGHT)
-        stack.set_transition_duration(500)
-
         page2 = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         page2.set_border_width(10)
         overview_label = Gtk.Label(label="Coming soon.")
         page2.add(overview_label)
 
+        #-------------------------------------------------------------------
+
+        page3 = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+        page3.set_border_width(10)
+
+        stack = Gtk.Stack()
+        stack.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT_RIGHT)
+        stack.set_transition_duration(500)
+
         stack.add_titled(page1, "page1", "Lessons")
         stack.add_titled(page2, "page2", "Overview")
+        stack.add_titled(page3, "page3", "About")
 
         switcher = Gtk.StackSwitcher()
         switcher.set_stack(stack)
@@ -227,10 +249,11 @@ class MainWindow(Gtk.Window):
         close_button = Gtk.Button(label="X")
         close_button.connect("clicked", self.close)
         close_button.set_border_width(10)
+        close_button.get_style_context().add_class("close")
 
         switcher_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
         switcher_box.add(switcher)
-        switcher_box.add(close_button)
+        switcher_box.pack_end(close_button, False, False, 0)
         switcher_box.get_style_context().add_class("switcher")
 
         main_box.pack_start(switcher_box, False, False, 0)
