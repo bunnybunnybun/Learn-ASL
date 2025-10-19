@@ -43,6 +43,10 @@ button.Button_Type_2:hover {
     min-height: 30px;
     min-width: 90px;
 }
+
+box.switcher {
+    background: linear-gradient(180deg, rgba(10,119,127,1) 85%, rgba(6,74,79,1) 100%);
+}
 '''
 
 css_provider.load_from_data(css.encode())
@@ -69,9 +73,7 @@ class MainWindow(Gtk.Window):
 
         main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
         main_box.set_border_width(0)
-        stack = Gtk.Stack()
-        stack.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT_RIGHT)
-        stack.set_transition_duration(500)
+        
         #self.notebook = Gtk.Notebook()
         #self.notebook.set_tab_pos(Gtk.PositionType.TOP)
 
@@ -178,15 +180,37 @@ class MainWindow(Gtk.Window):
 
         #------------------------------------------------------------
 
-        nested_notebook = Gtk.Notebook()
-        nested_notebook.set_tab_pos(Gtk.PositionType.TOP)
-        nested_notebook.append_page(letters_page, Gtk.Label(label="Letters"))
-        nested_notebook.append_page(numbers_page, Gtk.Label(label="Numbers"))
+        #nested_notebook = Gtk.Notebook()
+        #nested_notebook.set_tab_pos(Gtk.PositionType.TOP)
+        #nested_notebook.append_page(letters_page, Gtk.Label(label="Letters"))
+        #nested_notebook.append_page(numbers_page, Gtk.Label(label="Numbers"))
 
-        page1.add(nested_notebook)
+        #page1.add(nested_notebook)
 
         #____________________________________________________________
 
+        nested_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+        nested_box.set_border_width(15)
+        page1.add(nested_box)
+
+        
+        nested_stack = Gtk.Stack()
+        nested_stack.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT_RIGHT)
+        nested_stack.set_transition_duration(500)
+        nested_stack.add_titled(letters_page, "letters_page", "Letters")
+        nested_stack.add_titled(numbers_page, "numbers_page", "Numbers")
+
+        nested_switcher = Gtk.StackSwitcher()
+        nested_switcher.set_stack(nested_stack)
+
+        nested_box.add(nested_switcher)
+        nested_box.add(nested_stack)
+
+        #--------------------------------------------------------------
+
+        stack = Gtk.Stack()
+        stack.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT_RIGHT)
+        stack.set_transition_duration(500)
 
         page2 = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         page2.set_border_width(10)
@@ -198,8 +222,18 @@ class MainWindow(Gtk.Window):
 
         switcher = Gtk.StackSwitcher()
         switcher.set_stack(stack)
+        switcher.set_border_width(10)
 
-        main_box.pack_start(switcher, False, False, 0)
+        close_button = Gtk.Button(label="X")
+        close_button.connect("clicked", self.close)
+        close_button.set_border_width(10)
+
+        switcher_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
+        switcher_box.add(switcher)
+        switcher_box.add(close_button)
+        switcher_box.get_style_context().add_class("switcher")
+
+        main_box.pack_start(switcher_box, False, False, 0)
         main_box.pack_start(stack, True, True, 0)
 
         #____________________________________________________________
@@ -212,6 +246,9 @@ class MainWindow(Gtk.Window):
         self.add(main_box)
 
     #__________________________________________________________________
+
+    def close(self, widget):
+        win.destroy()
 
     def open_intro_to_letters(self, widget):
         intro_to_letters_window_1 = IntroToLetters.Intro_To_Letters_Window_1()
