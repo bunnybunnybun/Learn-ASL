@@ -12,10 +12,6 @@ from gi.repository import Gtk, Gdk
 css_provider = Gtk.CssProvider()
 
 css = '''
-notebook {
-    color: teal;
-}
-
 button.Button_Type_1 {
     border-radius: 12px;
     min-width: 120px;
@@ -29,8 +25,8 @@ button.Button_Type_1 {
 button.Button_Type_1:hover {
     background: rgba(13,158,168,1);
     font-size: 1.2em;
-    min-height: 30px;
-    min-width: 115px;
+    min-height: 33px;
+    min-width: 135px;
 }
 
 button.Button_Type_2 {
@@ -71,10 +67,15 @@ class MainWindow(Gtk.Window):
 
         #------------------------------------------------------------
 
-        main_box = Gtk.Box()
+        main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
         main_box.set_border_width(0)
-        self.notebook = Gtk.Notebook()
-        self.notebook.set_tab_pos(Gtk.PositionType.TOP)
+        stack = Gtk.Stack()
+        stack.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT_RIGHT)
+        stack.set_transition_duration(500)
+        #self.notebook = Gtk.Notebook()
+        #self.notebook.set_tab_pos(Gtk.PositionType.TOP)
+
+        
 
         #____________________________________________________________
 
@@ -189,13 +190,24 @@ class MainWindow(Gtk.Window):
 
         page2 = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         page2.set_border_width(10)
+        overview_label = Gtk.Label(label="Coming soon.")
+        page2.add(overview_label)
+
+        stack.add_titled(page1, "page1", "Lessons")
+        stack.add_titled(page2, "page2", "Overview")
+
+        switcher = Gtk.StackSwitcher()
+        switcher.set_stack(stack)
+
+        main_box.pack_start(switcher, False, False, 0)
+        main_box.pack_start(stack, True, True, 0)
 
         #____________________________________________________________
 
-        self.notebook.append_page(page1, Gtk.Label(label="Lessons"))
-        self.notebook.append_page(page2, Gtk.Label(label="Overview"))
+        #self.notebook.append_page(page1, Gtk.Label(label="Lessons"))
+        #self.notebook.append_page(page2, Gtk.Label(label="Overview"))
 
-        main_box.pack_start(self.notebook, True, True, 0)
+        #main_box.pack_start(self.notebook, True, True, 0)
 
         self.add(main_box)
 
