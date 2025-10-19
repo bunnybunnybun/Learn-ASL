@@ -8,7 +8,7 @@ from gi.repository import Gtk
 class Intro_To_Letters_Window_1(Gtk.Window):
     def __init__(self):
         super().__init__(title="Intro to Letters")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -52,7 +52,7 @@ class Intro_To_Letters_Window_1(Gtk.Window):
 class Intro_To_Letters_Window_2(Gtk.Window):
     def __init__(self):
         super().__init__(title="Intro to Letters")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)

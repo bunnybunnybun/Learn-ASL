@@ -8,7 +8,7 @@ from gi.repository import Gtk
 class A_Through_F_Window_A(Gtk.Window):
     def __init__(self):
         super().__init__(title="A Through F")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -54,7 +54,7 @@ class A_Through_F_Window_A(Gtk.Window):
 class A_Through_F_Window_B(Gtk.Window):
     def __init__(self):
         super().__init__(title="A Through F")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -106,7 +106,7 @@ class A_Through_F_Window_B(Gtk.Window):
 class A_Through_F_Window_C(Gtk.Window):
     def __init__(self):
         super().__init__(title="A Through F")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -157,7 +157,7 @@ class A_Through_F_Window_C(Gtk.Window):
 class A_Through_F_Window_D(Gtk.Window):
     def __init__(self):
         super().__init__(title="A Through F")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -208,7 +208,7 @@ class A_Through_F_Window_D(Gtk.Window):
 class A_Through_F_Window_E(Gtk.Window):
     def __init__(self):
         super().__init__(title="A Through F")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -259,7 +259,7 @@ class A_Through_F_Window_E(Gtk.Window):
 class A_Through_F_Window_F(Gtk.Window):
     def __init__(self):
         super().__init__(title="A Through F")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)

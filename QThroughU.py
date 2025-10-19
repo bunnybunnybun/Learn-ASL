@@ -8,7 +8,7 @@ from gi.repository import Gtk
 class Q_Through_U_Window_Q(Gtk.Window):
     def __init__(self):
         super().__init__(title="Q Through U")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -54,7 +54,7 @@ class Q_Through_U_Window_Q(Gtk.Window):
 class Q_Through_U_Window_R(Gtk.Window):
     def __init__(self):
         super().__init__(title="Q Through U")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -105,7 +105,7 @@ class Q_Through_U_Window_R(Gtk.Window):
 class Q_Through_U_Window_S(Gtk.Window):
     def __init__(self):
         super().__init__(title="Q Through U")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -156,7 +156,7 @@ class Q_Through_U_Window_S(Gtk.Window):
 class Q_Through_U_Window_T(Gtk.Window):
     def __init__(self):
         super().__init__(title="Q Through U")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -207,7 +207,7 @@ class Q_Through_U_Window_T(Gtk.Window):
 class Q_Through_U_Window_U(Gtk.Window):
     def __init__(self):
         super().__init__(title="Q Through U")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)

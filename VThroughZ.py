@@ -8,7 +8,7 @@ from gi.repository import Gtk
 class V_Through_Z_Window_V(Gtk.Window):
     def __init__(self):
         super().__init__(title="V Through Z")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -54,7 +54,7 @@ class V_Through_Z_Window_V(Gtk.Window):
 class V_Through_Z_Window_W(Gtk.Window):
     def __init__(self):
         super().__init__(title="V Through Z")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -105,7 +105,7 @@ class V_Through_Z_Window_W(Gtk.Window):
 class V_Through_Z_Window_X(Gtk.Window):
     def __init__(self):
         super().__init__(title="V Through Z")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -156,7 +156,7 @@ class V_Through_Z_Window_X(Gtk.Window):
 class V_Through_Z_Window_Y(Gtk.Window):
     def __init__(self):
         super().__init__(title="V Through Z")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
@@ -207,7 +207,7 @@ class V_Through_Z_Window_Y(Gtk.Window):
 class V_Through_Z_Window_Z(Gtk.Window):
     def __init__(self):
         super().__init__(title="V Through Z")
-        self.set_default_size(300, 300)
+        self.set_default_size(405, 428)
 
         box_main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing= 6)
         box_main.set_border_width(20)
