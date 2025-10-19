@@ -12,22 +12,48 @@ from gi.repository import Gtk, Gdk
 css_provider = Gtk.CssProvider()
 
 css = '''
+notebook {
+    color: teal;
+}
+
 button.Button_Type_1 {
     border-radius: 12px;
-    min-width: 110px;
+    min-width: 120px;
     min-height: 25px;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
     margin: 2px;
+    background: linear-gradient(180deg, rgba(10,119,127,1) 0%, rgba(6,74,79,1) 100%);
+    color: white;
+}
+
+button.Button_Type_1:hover {
+    background: rgba(13,158,168,1);
+    font-size: 1.2em;
+    min-height: 30px;
+    min-width: 115px;
 }
 
 button.Button_Type_2 {
     border-radius: 12px;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
     margin: 10px;
+    background: linear-gradient(180deg, rgba(10,119,127,1) 0%, rgba(6,74,79,1) 100%);
+    color: white;
+}
+
+button.Button_Type_2:hover {
+    background: rgba(13,158,168,1);
+    font-size: 1.2em;
+    min-height: 30px;
+    min-width: 90px;
 }
 '''
 
 css_provider.load_from_data(css.encode())
+
+settings = Gtk.Settings.get_default()
+settings.set_property("gtk-theme-name", "Adwaita")
+settings.set_property("gtk-application-prefer-dark-theme", True)
 
 screen = Gdk.Screen.get_default()
 style_context = Gtk.StyleContext()
