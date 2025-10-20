@@ -99,7 +99,7 @@ class A(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/A.png")
+        image.set_from_file("assets/a.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -151,7 +151,7 @@ class B(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/B.png")
+        image.set_from_file("assets/b.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -203,7 +203,7 @@ class C(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/C.png")
+        image.set_from_file("assets/c.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -255,7 +255,7 @@ class D(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/D.png")
+        image.set_from_file("assets/d.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -307,7 +307,7 @@ class E(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/E.png")
+        image.set_from_file("assets/e.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -359,7 +359,7 @@ class F(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/F.png")
+        image.set_from_file("assets/f.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -411,7 +411,7 @@ class G(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/G.png")
+        image.set_from_file("assets/g.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -463,7 +463,7 @@ class H(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/H.png")
+        image.set_from_file("assets/h.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -515,7 +515,7 @@ class I(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/I.png")
+        image.set_from_file("assets/i.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -567,7 +567,7 @@ class J(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/J.png")
+        image.set_from_file("assets/j.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -619,7 +619,7 @@ class K(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/K.png")
+        image.set_from_file("assets/k.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -671,7 +671,7 @@ class L(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/L.png")
+        image.set_from_file("assets/l.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -723,7 +723,7 @@ class M(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/M.png")
+        image.set_from_file("assets/m.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -775,7 +775,7 @@ class N(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/N.png")
+        image.set_from_file("assets/n.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -827,7 +827,7 @@ class O(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/O.png")
+        image.set_from_file("assets/o.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -879,7 +879,7 @@ class P(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/P.png")
+        image.set_from_file("assets/p.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -931,7 +931,7 @@ class Q(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/Q.png")
+        image.set_from_file("assets/q.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -983,7 +983,7 @@ class R(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/R.png")
+        image.set_from_file("assets/r.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -1035,7 +1035,7 @@ class S(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/S.png")
+        image.set_from_file("assets/s.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -1087,7 +1087,7 @@ class T(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/T.png")
+        image.set_from_file("assets/t.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -1139,7 +1139,7 @@ class U(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/U.png")
+        image.set_from_file("assets/u.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -1191,7 +1191,7 @@ class V(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/V.png")
+        image.set_from_file("assets/v.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -1243,7 +1243,7 @@ class W(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/W.png")
+        image.set_from_file("assets/w.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -1295,7 +1295,7 @@ class X(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/X.png")
+        image.set_from_file("assets/x.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -1347,7 +1347,7 @@ class Y(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/Y.png")
+        image.set_from_file("assets/y.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
@@ -1399,7 +1399,7 @@ class Z(Gtk.Window):
         box.set_border_width(10)
 
         image = Gtk.Image()
-        image.set_from_file("assets/Z.png")
+        image.set_from_file("assets/z.png")
         self.input = Gtk.Entry()
         self.input.set_placeholder_text("Type what you think this character is...")
         self.input.connect("activate", self.check_answer)
