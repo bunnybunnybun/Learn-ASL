@@ -5,6 +5,7 @@ import GThroughK
 import LThroughP
 import QThroughU
 import VThroughZ
+import PracticeMode
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Gdk
@@ -246,6 +247,7 @@ class MainWindow(Gtk.Window):
         page_2_inner_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         page_2_inner_box.set_border_width(10)
         practice_button = Gtk.Button(label="Practice mode!")
+        practice_button.connect("clicked", self.practice_mode)
         practice_button.get_style_context().add_class("Button_Type_1")
         page_2_inner_box.add(practice_button)
         page2.add(page_2_inner_box)
@@ -310,6 +312,10 @@ class MainWindow(Gtk.Window):
 
     def close(self, widget):
         win.destroy()
+
+    def practice_mode(self, widget):
+        PracticeMode.open_window()
+        
 
     def open_intro_to_letters(self, widget):
         intro_to_letters_window_1 = IntroToLetters.Intro_To_Letters_Window_1()
