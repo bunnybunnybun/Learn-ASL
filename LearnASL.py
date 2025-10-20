@@ -12,11 +12,15 @@ from gi.repository import Gtk, Gdk
 css_provider = Gtk.CssProvider()
 
 css = '''
+stackswitcher {
+    
+}
+
 button.Button_Type_1 {
     border-radius: 12px;
     min-width: 120px;
     min-height: 25px;
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
     margin: 2px;
     background: linear-gradient(180deg, rgba(10,119,127,1) 0%, rgba(6,74,79,1) 100%);
     color: white;
@@ -31,7 +35,7 @@ button.Button_Type_1:hover {
 
 button.Button_Type_2 {
     border-radius: 12px;
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
     margin: 10px;
     background: linear-gradient(180deg, rgba(10,119,127,1) 0%, rgba(6,74,79,1) 100%);
     color: white;
@@ -59,6 +63,18 @@ box.nested_box {
 
 box.switcher {
     background: linear-gradient(180deg, rgba(10,119,127,1) 85%, rgba(6,74,79,1) 100%);
+}
+
+box.page2 {
+    border: 3px solid rgba(37, 37, 37, 1)
+}
+
+box.page3 {
+    border: 3px solid rgba(37, 37, 37, 1)
+}
+
+label.disclaimer {
+    color: red;
 }
 '''
 
@@ -225,14 +241,36 @@ class MainWindow(Gtk.Window):
         #--------------------------------------------------------------
 
         page2 = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        page2.get_style_context().add_class("page2")
         page2.set_border_width(10)
-        overview_label = Gtk.Label(label="Coming soon.")
-        page2.add(overview_label)
+        page_2_inner_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        page_2_inner_box.set_border_width(10)
+        practice_button = Gtk.Button(label="Practice mode!")
+        practice_button.get_style_context().add_class("Button_Type_1")
+        page_2_inner_box.add(practice_button)
+        page2.add(page_2_inner_box)
 
         #-------------------------------------------------------------------
 
         page3 = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
         page3.set_border_width(10)
+        page3.get_style_context().add_class("page3")
+
+        page_3_inner_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+        page_3_inner_box.set_border_width(20)
+
+        about_label_1 = Gtk.Label(label="This is a WIP app for learning how to fingerspell in American Sign Language!")
+        about_label_1.set_line_wrap(True)
+        about_label_2 = Gtk.Label(label="Disclaimer! I, the person who wrote this program, am NOT an ASL expert! Information provided in this app may be innacurate, so take it how you will.")
+        about_label_2.set_line_wrap(True)
+        about_label_2.get_style_context().add_class("disclaimer")
+
+
+        page_3_inner_box.add(about_label_1)
+        page_3_inner_box.add(about_label_2)
+        page3.add(page_3_inner_box)
+
+        #-------------------------------------------------------------------
 
         stack = Gtk.Stack()
         stack.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT_RIGHT)
