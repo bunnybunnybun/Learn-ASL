@@ -1,10 +1,12 @@
 # Disclaimer
-I am not an ASL expert! If you are trying to learn ASL, you probably shouldn't use this app. I created this app as a way for me to practice my coding and ASL skills, I am NOT qualified to be teaching ASL. I made this app for myself, as a personal project, not really to teach others.
-If you find anything in the app that is wrong, wether it's a glitch or I mistakenly taught something incorrect, feel free to open an issue on this Github repository if ya want.
+I am not an ASL expert! If you are trying to learn ASL, you probably shouldn't use this app. I created this app as a way for me to practice my coding and ASL skills, I am NOT qualified to be teaching ASL.
 
 # Learn-ASL
 Learn-ASL is an app for learning fingerspelling in American Sign Language. It splits the learning process up into bite sized pieces, by teaching you 5* characters at a time.
 
+[Demo video](https://www.youtube.com/watch?v=qXAb-XMiNj4) (I made this for Siege)
+
+![screenshot](assets/screenshot.png)
 *Not always 5 at a time, just usually.
 
 ## Features:
@@ -21,8 +23,4 @@ Learn-ASL is an app for learning fingerspelling in American Sign Language. It sp
  - Add a welcome screen that shows up the first time you open the app.
 
 ## How to install:
-Note that if you want to demo the app for Siege, you are supposed to just watch the video (https://www.youtube.com/watch?v=qXAb-XMiNj4) rather than installing it. If you want to install it anyway, keep reading I guess.
-FYI, the reason that this is not published to PyPI, is because PyPI would not be able to install the required dependencies.
-
-To install:
-Make sure you have these packages installed on your system: GTK, PyGObject and LibAdwaita. Then clone this repository, and, from within the repository's main folder, run ```python3 LearnASL.py```.
+Make sure you have these packages installed on your system: GTK, PyGObject and LibAdwaita. Then clone this repository, and, from within the repository's main folder, execute ```python3 LearnASL.py```.
